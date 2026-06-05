@@ -34,7 +34,7 @@ https://cloud-gallery-eight.vercel.app/
 <img width="2426" height="1239" alt="image" src="https://github.com/user-attachments/assets/0b14a62b-4fc8-4397-b1e6-e36cd9e3d517" />
 ---
 
-## 🧠 What I Learned
+## 🧠 Lessons
 - Managing UI state with React hooks
 - Modal architecture patterns
 - Performance improvements via image preloading
