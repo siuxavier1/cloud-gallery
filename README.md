@@ -1,4 +1,4 @@
-# ☁️ Cloud Gallery (Manga Showcase App)
+# ☁️ Cloud Gallery
 
 A React-based interactive gallery showcasing manga titles in a stylized “cloud” UI concept. Built to demonstrate component design, modal systems, responsive layout, and image optimization techniques.
 
