@@ -1,16 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CloudCard from "./CloudCard";
 import CloudModal from "./CloudModal";
 import styles from "./CloudGallery.module.scss";
-import { preloadImages } from "./preloadImages";
+
 
 export default function CloudGallery({ title, clouds }) {
   const [openGallery, setOpenGallery] = useState(false);
   const [selected, setSelected] = useState(null);
-
-  useEffect(() => {
-    preloadImages();
-  }, []);
 
   console.log("openGallery =", openGallery);
 
