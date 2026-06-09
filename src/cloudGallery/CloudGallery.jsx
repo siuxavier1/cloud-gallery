@@ -1,19 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CloudCard from "./CloudCard";
 import CloudModal from "./CloudModal";
 import styles from "./CloudGallery.module.scss";
-import { useEffect } from "react";
-import { cloudImages } from "./cloudImages";
 import { preloadImages } from "./preloadImages";
-import { clouds } from "./cloudData";
 
-export default function CloudGallery() {
+export default function CloudGallery({ title, clouds }) {
   const [openGallery, setOpenGallery] = useState(false);
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     preloadImages();
-  }, [preloadImages]);
+  }, []);
 
   console.log("openGallery =", openGallery);
 
@@ -25,9 +22,8 @@ export default function CloudGallery() {
           className={styles.cloudEntry}
           onClick={() => setOpenGallery(true)}
         >
-          Manga
-          <br></br>
-          Made with ReactJS
+          <div className={styles.title}>{title}</div>
+          <span>Made with ReactJS</span>
         </div>
       )}
 
